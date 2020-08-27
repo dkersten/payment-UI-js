@@ -229,7 +229,19 @@ form {
 		letter-spacing: 1px;
 		z-index: 4;
 		font-family: 'IBM Plex Mono', monospace;
+	}	
+}
+
+@media only screen and (max-width: 960px) {
+	.inner-container {
+		flex-direction: column;
 	}
 	
+	> * {
+		flex-basis: 100%
+	}
 	
+	form {
+		margin-bottom: 2.5rem;
+	}
 }
