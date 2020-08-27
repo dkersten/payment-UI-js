@@ -1,0 +1,110 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, right bottom, from(#050607), to(#30363A));
+  background: linear-gradient(to bottom right, #050607, #30363A);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.inner-container {
+  width: 96%;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inner-container > * {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #13171b;
+  padding: 2rem;
+  margin: auto;
+  max-width: 500px;
+  border-radius: 40px;
+}
+
+form > * {
+  margin: auto;
+  width: 90%;
+  max-width: 375px;
+  font-size: 1.25rem;
+}
+
+form h2 {
+  color: #C9CBCD;
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+form label {
+  padding-left: .25rem;
+  color: #0255D8;
+  margin-bottom: .75rem;
+}
+
+form input[type="text"], form input[type="month"] {
+  border: none;
+  color: #C9CBCD;
+  background: #13171b;
+  height: 45px;
+  border-radius: 15px;
+  margin-bottom: 1.25rem;
+  padding-left: 1rem;
+  -webkit-box-shadow: inset 2px 2px 5px #212527, inset -5px -5px 10px #050607;
+          box-shadow: inset 2px 2px 5px #212527, inset -5px -5px 10px #050607;
+}
+
+form input[type="text"]:focus, form input[type="month"]:focus {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: inset 1px 1px 2px #212527, inset -1px -1px 2px #050607;
+          box-shadow: inset 1px 1px 2px #212527, inset -1px -1px 2px #050607;
+}
+
+form input[type="month"] {
+  padding-right: 1rem;
+}
+
+form input[type="submit"] {
+  margin-top: .5rem;
+  border: none;
+  color: #C9CBCD;
+  background: -webkit-gradient(linear, left top, right top, from(#013698), to(#0255D8));
+  background: linear-gradient(to right, #013698, #0255D8);
+  height: 45px;
+  border-radius: 15px;
+  margin-bottom: 1.25rem;
+  -webkit-box-shadow: -5px -5px 20px #050607, 5px 5px 20px #13171b;
+          box-shadow: -5px -5px 20px #050607, 5px 5px 20px #13171b;
+}
+
+form input[type="submit"]:hover {
+  cursor: pointer;
+  -webkit-box-shadow: -2px -2px 5px #050607, 2px 2px 5px #13171b;
+          box-shadow: -2px -2px 5px #050607, 2px 2px 5px #13171b;
+}
+
+form input[type="submit"]:focus {
+  border: none;
+  outline: none;
+}
+/*# sourceMappingURL=styles.css.map */

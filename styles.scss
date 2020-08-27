@@ -1,0 +1,117 @@
+// colors
+$blue-dark: #062560;
+$blue: #013698;
+$blue-light: #0255D8;
+$blue-lighter: #13A4F8;
+$blue-pale: #5F99C7;
+
+$black-dark: #050607;
+$black-light: #13171b;
+
+$grey-darker: #212527;
+$grey-dark: #30363A;
+$grey: #585A5E;
+$grey-light: #C9CBCD;
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100vw;
+	min-height: 100vh;
+	background: linear-gradient(to bottom right, $black-dark, $grey-dark);
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.inner-container {
+	width: 96%;
+	max-width: 1240px;
+	margin: 0 auto;
+	display: flex;
+	
+	> * {
+		flex-basis: 50%;
+	}
+}
+
+.form-container {
+	// background: $blue;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	background: $black-light;
+	padding: 2rem;
+	margin: auto;
+	max-width: 500px;
+	border-radius: 40px;
+	
+	> * {
+		margin: auto;
+		width: 90%;
+		max-width: 375px;
+		font-size: 1.25rem;
+	}
+	
+	h2 {
+		color: $grey-light;
+		text-align: center;
+		font-size: 1.75rem;
+		margin-bottom: 1.5rem;
+	}
+	
+	label {
+		padding-left: .25rem;
+		color: $blue-light;
+		margin-bottom: .75rem;
+	}
+	
+	input[type="text"], input[type="month"] {
+		border: none;
+		color: $grey-light;
+		background: $black-light;
+		height: 45px;
+		border-radius: 15px;
+		margin-bottom: 1.25rem;
+		padding-left: 1rem;
+		box-shadow:  inset 2px 2px 5px $grey-darker, inset -5px -5px 10px $black-dark;
+		
+		&:focus {
+			border: none;
+			outline: none;
+    		box-shadow:  inset 1px 1px 2px $grey-darker, inset -1px -1px 2px $black-dark;
+  		}
+	}
+	
+	input[type="month"] {
+		padding-right: 1rem;
+	}
+	
+	input[type="submit"] {
+		margin-top: .5rem;
+		border: none;
+		color: $grey-light;
+		background: linear-gradient(to right, $blue, $blue-light);
+		height: 45px;
+		border-radius: 15px;
+		margin-bottom: 1.25rem;
+		box-shadow: -5px -5px 20px $black-dark,  5px 5px 20px $black-light;
+		
+		&:hover {
+			cursor: pointer;
+			box-shadow: -2px -2px 5px $black-dark, 2px 2px 5px $black-light;
+		}
+
+		&:focus {
+			border: none;
+			outline: none;
+		}
+	}
+}
+
+.card-container {
+	
+}
