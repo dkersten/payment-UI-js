@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+
 // colors
 $blue-dark: #062560;
 $blue: #013698;
@@ -190,7 +192,27 @@ form {
 	.name {
 		position: absolute;
 		left: 35px;
-		top: 128px;
+		top: 125px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		z-index: 4;
+		font-family: 'IBM Plex Mono', monospace;
+	}
+	
+	.expiration {
+		position: absolute;
+		left: 35px;
+		top: 152px;
+		font-weight: 600;
+		letter-spacing: 1px;
+		z-index: 4;
+		font-family: 'IBM Plex Mono', monospace;
+	}
+	
+	.date {
+		position: absolute;
+		left: 35px;
+		top: 172px;
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		z-index: 4;

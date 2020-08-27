@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -189,7 +190,27 @@ form input[type="submit"]:focus {
 .card-container .name {
   position: absolute;
   left: 35px;
-  top: 128px;
+  top: 125px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 4;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.card-container .expiration {
+  position: absolute;
+  left: 35px;
+  top: 152px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 4;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.card-container .date {
+  position: absolute;
+  left: 35px;
+  top: 172px;
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 4;
