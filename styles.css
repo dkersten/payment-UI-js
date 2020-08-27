@@ -6,8 +6,8 @@
 .container {
   width: 100vw;
   min-height: 100vh;
-  background: -webkit-gradient(linear, left top, right bottom, from(#050607), to(#30363A));
-  background: linear-gradient(to bottom right, #050607, #30363A);
+  background: -webkit-gradient(linear, left top, right bottom, from(#050607), to(#191c1e));
+  background: linear-gradient(to bottom right, #050607, #191c1e);
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -39,6 +39,8 @@ form {
   margin: auto;
   max-width: 500px;
   border-radius: 40px;
+  -webkit-box-shadow: 0 0 1px #050607;
+          box-shadow: 0 0 1px #050607;
 }
 
 form > * {
@@ -106,5 +108,91 @@ form input[type="submit"]:hover {
 form input[type="submit"]:focus {
   border: none;
   outline: none;
+}
+
+.card-container .card {
+  margin: auto;
+  margin-top: 50px;
+  width: 375px;
+  height: 205px;
+  position: relative;
+  background-color: #212527;
+  color: #0255D8;
+  border-radius: 15px;
+  -webkit-box-shadow: -2px 2px 5px 2px rgba(0, 0, 0, 0.65);
+          box-shadow: -2px 2px 5px 2px rgba(0, 0, 0, 0.65);
+  -webkit-transform: translate(0px, 0px) rotate(-10deg);
+          transform: translate(0px, 0px) rotate(-10deg);
+  overflow: hidden;
+}
+
+.card-container .card:hover {
+  -webkit-transform: translate(-5px, -10px) rotate(-2.5deg);
+          transform: translate(-5px, -10px) rotate(-2.5deg);
+  -webkit-transition: all 0.5s cubic-bezier(0.44, -0.37, 0.84, 1.32);
+  transition: all 0.5s cubic-bezier(0.44, -0.37, 0.84, 1.32);
+  cursor: pointer;
+}
+
+.card-container .circle-sm {
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  z-index: 3;
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  background: radial-gradient(#013698, #062560);
+}
+
+.card-container .circle-bg {
+  position: absolute;
+  right: -140px;
+  bottom: -75px;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  background-color: #191c1e;
+  z-index: 2;
+}
+
+.card-container h1 {
+  position: absolute;
+  top: 20px;
+  left: 35px;
+  font-size: 20px;
+  z-index: 4;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.card-container h2 {
+  position: absolute;
+  top: 50px;
+  left: 55px;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  font-size: 16px;
+  z-index: 4;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.card-container .member {
+  position: absolute;
+  left: 35px;
+  top: 105px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 4;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.card-container .name {
+  position: absolute;
+  left: 35px;
+  top: 128px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 4;
+  font-family: 'IBM Plex Mono', monospace;
 }
 /*# sourceMappingURL=styles.css.map */
