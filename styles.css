@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -25,6 +26,10 @@
 .inner-container > * {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+}
+
+.form-container * {
+  font-family: 'Rubik', sans-serif;
 }
 
 form {
@@ -56,12 +61,18 @@ form h2 {
   text-align: center;
   font-size: 1.75rem;
   margin-bottom: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 form label {
   padding-left: .25rem;
   color: #0255D8;
   margin-bottom: .75rem;
+  background: -webkit-gradient(linear, left top, right top, from(#013698), to(#0255D8));
+  background: linear-gradient(to right, #013698, #0255D8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 form input[type="text"], form input[type="month"] {

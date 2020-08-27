@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
 
 // colors
 $blue-dark: #062560;
@@ -40,7 +41,9 @@ $grey-light: #C9CBCD;
 }
 
 .form-container {
-	// background: $blue;
+	* {
+		font-family: 'Rubik', sans-serif;
+	}
 }
 
 form {
@@ -65,12 +68,20 @@ form {
 		text-align: center;
 		font-size: 1.75rem;
 		margin-bottom: 1.5rem;
+		font-weight: 600;
+		letter-spacing: 1px;
 	}
 	
 	label {
 		padding-left: .25rem;
 		color: $blue-light;
 		margin-bottom: .75rem;
+		background: -webkit-linear-gradient(left, $blue, $blue-light);
+		background: -o-linear-gradient(right, $blue, $blue-light);
+		background: -moz-linear-gradient(right, $blue, $blue-light);
+		background: linear-gradient(to right, $blue, $blue-light); 
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
 	}
 	
 	input[type="text"], input[type="month"] {
@@ -217,5 +228,7 @@ form {
 		letter-spacing: 1px;
 		z-index: 4;
 		font-family: 'IBM Plex Mono', monospace;
-	}	
+	}
+	
+	
 }
